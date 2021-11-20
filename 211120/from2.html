@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폼 연습하기 2</title>
+</head>
+<body>
+<form action="">
+    <h2>숫자 입력하기</h2>
+    <label><input type="checkbox"> 빨간색</label>
+
+    <input type="number" min="0" max="3">개 (최대 3개)
+    <br>
+    <label><input type="checkbox"> 초록색</label>
+
+    <input type="number" min="0" max="5" value="1">개 (최대 5개)
+    <hr>
+    <label><input type="checkbox"> 빨간색</label>
+
+    <input type="range" min="0" max="3">개 (최대 3개)
+    <br>
+    <label><input type="checkbox"> 초록색</label>
+
+    <input type="range" min="0" max="5" value="1">개 (최대 5개)
+    <hr>
+
+    <h2>날짜 입력하기</h2>
+
+    <input type="date"> <br>
+    <input type="month"> <br>
+    <input type="week"> <br>
+    <input type="date"
+           min="2021-11-15" max="2021-11-25">
+    <hr>
+
+    <h2>시간 입력하기</h2>
+    <input type="time"><br>
+    <input type="datetime-local">
+    <hr>
+
+    <h2>버튼</h2>
+    <input type="submit">
+    <input type="reset">
+    <input type="image"
+           src="img/lol.png" alt="바나나 사진"
+           width="100">
+    <input type="button" value="새 버튼"
+           onclick="window.open('link.html')">
+    <br>
+    <input type="file">
+</form>
+</body>
+</html>

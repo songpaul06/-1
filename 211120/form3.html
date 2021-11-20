@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폼 연습하기 3</title>
+</head>
+<body>
+<form action="">
+    <fieldset>
+        <legend>배송 정보</legend>
+        <ul>
+            <li>
+                <label for="order">주문번호</label>
+                <input type="text" id="order" readonly>
+            </li>
+            <li>
+                <label for="name">이름</label>
+                <input type="text" id="name" autofocus>
+            </li>
+            <li>
+                <label for="address">배송주소</label>
+                <input type="text" id="address" required>
+            </li>
+            <li>
+                <label for="email">이메일</label>
+                <input type="text" id="email">
+            </li>
+            <li>
+                <label for="phone">전화번호</label>
+                <input type="text" id="phone"
+                       placeholder="하이픈을 빼고 입력해주세요">
+            </li>
+        </ul>
+    </fieldset>
+    <input type="submit">
+    <input type="reset">
+</form>
+</body>
+</html>

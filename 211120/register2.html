@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 페이지 수정하기</title>
+</head>
+<body>
+<fieldset>
+    <legend>회원가입</legend>
+    <ul>
+        <li>
+            <label for="name" >이름</label>
+            <input type="text" id="name" autofocus required
+                   placeholder="4자~10자 사이, 공백없이">
+        </li>
+        <li>
+            <label for="email">이메일</label>
+            <input type="text" id="email" required>
+        </li>
+        <li>
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" required
+                   placeholder="문자, 숫자, 특수기호 포함 8자 이상">
+        </li>
+        <li>
+            <label for="checkpassword">비밀번호확인</label>
+            <input type="password" id="checkpassword" required>
+        </li>
+        <li>
+            <p>생년월일 추가</p><input type="date">
+        </li>
+        <li>
+            <p>비밀번호 찾기 질문</p>
+            <label>가장 좋아하는 동물이름<input type="text" size="10"></label><br>
+            <label>가장 인상남는 장소<input type="text" size="10"></label><br>
+            <label>가장 좋아하는 음식<input type="text" size="10"></label>
+        </li>
+        <li>
+            <p><em>개인정보 동의</em></p>
+            <label><input type="radio" name="pojang" value="yes">동의</label>
+            <label><input type="radio" name="pojang" value="no">거절</label>
+        </li>
+        <li>
+            <p><em>메일로 소식 받기</em></p>
+            <label><input type="radio" name="pojang1">수신함</label>
+            <label><input type="radio" name="pojang1" checked>수신안함</label>
+        </li>
+        <input type="submit">
+        <input type="reset">
+    </ul>
+</fieldset>
+</body>
+</html>
