@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폼 연습하기 4</title>
+</head>
+<body>
+<form action="">
+    <fieldset>
+        <legend>배송정보</legend>
+        <label>이름 <input type="text"></label><br>
+        <label>연락처 <input type="tel"></label><br>
+        <label>메모</label>
+        <textarea rows="4" cols="40"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>상품정보</legend>
+        <label>색상 선택</label>
+        <select id="color">
+            <option value="red">빨간색</option>
+            <option value="green">초록색</option>
+            <option value="blue">파란색</option>
+        </select>
+        <br>
+        <label>포장 여부</label>
+        <input type="text" list="packing">
+        <datalist id="packing">
+            <option value="yes">포장 O</option>
+            <option value="no">포장 X</option>
+        </datalist>
+        <br>
+        <button type="submit">제출</button>
+        <button type="reset">초기화</button>
+        <button type="button">일반 버튼 (기능x)</button>
+    </fieldset>
+</form>
+</body>
+</html>
