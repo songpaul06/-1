@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스타일 연습하기</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        p {
+            font-style: italic;
+        }
+        .accent {
+            padding: 5px;
+            border: 1px solid #12DE34;
+        }
+        .bg {
+            background-color: #999999;
+        }
+        #container {
+            width: 500px;
+            margin: 10px auto;
+            padding: 5px;
+            border: 1px solid #000000;
+        }
+        h1, p {
+            text-align: center;
+        }
+        p {
+            color: black;
+        }
+        h1 {
+            color: brown !important;
+        }
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <h1 class="accent bg" style="color: green">웹 페이지 만들기</h1>
+    <p style="color: red">HTML, CSS, <span class="accent">JavaScript</span>를 이용합니다.</p>
+    <p>CSS는 HTML를 꾸며줍니다.</p>
+    <img src="cat.jpg" width="100%">
+</div>
+</body>
+</html>
