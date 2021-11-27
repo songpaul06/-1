@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>리스트 스타일</title>
+    <style>
+        .style-circle {
+            list-style-type: circle;
+        }
+        .style-square {
+            list-style-type: square;
+        }
+        .style-none {
+            list-style-type: none;
+        }
+        .style-apple {
+            list-style-image: url('apple.png');
+        }
+        .menu {
+            list-style: none;
+        }
+        .menu2 {
+            border: 1px solid black;
+            padding: 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<ul class="style-circle">
+    <li>믿는 도끼에 발등 찍힌다</li>
+    <li>배보다 배꼽이 더 크다</li>
+    <li>백지장도 맞들면 낫다</li>
+</ul>
+<ul class="style-square">
+    <li>믿는 도끼에 발등 찍힌다</li>
+    <li>배보다 배꼽이 더 크다</li>
+    <li>백지장도 맞들면 낫다</li>
+</ul>
+<ul class="style-none">
+    <li>믿는 도끼에 발등 찍힌다</li>
+    <li>배보다 배꼽이 더 크다</li>
+    <li>백지장도 맞들면 낫다</li>
+</ul>
+<ul class="style-apple">
+    <li>믿는 도끼에 발등 찍힌다</li>
+    <li>배보다 배꼽이 더 크다</li>
+    <li>백지장도 맞들면 낫다</li>
+</ul>
+<hr>
+
+<ul>
+    <li>밑 빠진 독에 물 붓기</li>
+    <li>벼룩의 간 빼먹기</li>
+</ul>
+<ul style="list-style-position:inside">
+    <li>밑 빠진 독에 물 붓기</li>
+    <li>벼룩의 간 빼먹기</li>
+</ul>
+<ul style="list-style-position:outside">
+    <li>밑 빠진 독에 물 붓기</li>
+    <li>벼룩의 간 빼먹기</li>
+</ul>
+<hr>
+<ul class="menu">
+    <li class="menu2">회사 소개</li>
+    <li class="menu2">자료실</li>
+    <li class="menu2">공지사항</li>
+</ul>
+</body>
+</html>
