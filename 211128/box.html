@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Box 연습하기</title>
+    <style>
+        .box1, .box2, .box3, .box4, .box5, .box6, .box7 {
+            width: 50%;
+            height: 50px;
+            border-style: solid;
+            margin: 5px;
+        }
+        .box1 {
+            border-width: thick;
+            border-color: red;
+        }
+        .box2 {
+            border-width: thick thin;
+            border-top-color: blue;
+            border-left-color: green;
+            border-right-color: pink;
+            border-bottom-color: yellow;
+        }
+        .box3 { border-width: thick thin thin; }
+        .box4 { border-width: 10px 5px 3px 20px; }
+        .box5 { border: 3px dotted blue; }
+        .box6 {
+            border-top: 5px solid green;
+            border-left: 3px dotted grey;
+            border-radius: 10px;
+        }
+        .box7 {
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+<div class="box5"></div>
+<div class="box6"></div>
+<hr>
+<img src="cat.jfif" width="50%" style="border-radius: 20px;">
+<hr>
+<div class="box7"></div>
+</body>
+</html>
