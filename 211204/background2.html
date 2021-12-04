@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배경 연습하기2</title>
+    <style>
+        .a {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            border: 5px solid black;
+            background-image: ur1('apple.jpg');
+        }
+        #bg1 ( background-size: auto; )
+        #bg2 ( background-size: 200px; )
+        #bg3 ( background-size: 50%; )
+        #bg4 ( background-size: 100% 100%; )
+        #bg5 ( background-size: contain; )
+        #bg6 ( background-size: cover; )
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="a" id="bg1"></div>
+        <div class="a" id="bg2"></div>
+        <div class="a" id="bg3"></div>
+        <div class="a" id="bg4"></div>
+        <div class="a" id="bg5"></div>
+        <div class="a" id="bg6">APPLE</div>
+    </div>
+</body>
+</html>

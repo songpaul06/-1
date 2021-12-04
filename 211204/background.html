@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배경 연습하기</title>
+    <style>
+        .a {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border: 5px dotted black;
+        }
+        #border {
+            background-clip: border-box;
+        }
+        #padding {
+            background-clip: padding-box;
+        }
+        #content {
+            background-clip: content-box;
+        }
+        body {
+            background-image: url('배경.jpg');
+            background-repeat: repeat;
+            background-position: left bottom;
+            background-attachment: fixed;
+        }
+
+        .b {
+            border: 5px dotted black;
+            padding: 10px;
+            margin: 10px;
+            background-image: url('약.jpg');
+            background-origin: border-box;
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="a" id="border">
+            <h2>좋은 약은 입에 쓰다</h2>
+            <p>듣고 삻고 귀에 거슬리는 말이라도
+               제 인격 수양에는 이롭다</p>
+        </div>
+    </div>
+    <div class="a" id="padding">
+        <h2>좋은 약은 입에 쓰다</h2>
+        <p>듣고 삻고 귀에 거슬리는 말이라도
+            제 인격 수양에는 이롭다</p>
+    </div>
+
+    <div class="b" id="content">
+        <h2>좋은 약은 입에 쓰다</h2>
+        <p>듣고 삻고 귀에 거슬리는 말이라도
+            제 인격 수양에는 이롭다</p>
+    </div>
+
+</body>
+</html>
