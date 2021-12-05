@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>그라데이션 효과로 국기 만들기</title>
+    <style>
+        table, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        #grad {
+            width: 300px;
+            height: 300px;
+            background: white;
+            background: radial-gradient(circle, red, red 40%, white 40%, white)
+        }
+        #grad1 {
+            width: 300px;
+            height: 300px;
+            background: white;
+            background: repeating-linear-gradient(to right, blue, blue 33%, white 33%, white 66%, red 66%, red 100% );
+        }
+        #grad2 {
+            width: 300px;
+            height: 280px;
+            background: white;
+            background: repeating-linear-gradient(red, red 20px, white 20px, white 40px);
+        }
+        #grad3 {
+            width: 100px;
+            height: 70px;
+            background:blue;
+            background: radial-gradient(blue)
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <table>
+        <thead>
+        <tr>
+            <td>
+                <div id="grad"></div>
+            </td>
+            <td>
+                <div id="grad1"></div>
+            </td>
+            <td>
+                <div id="grad2"></div>
+                <div id="grad3">* * * * * * * *</div>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>그라데이션 효과</title>
+    <style>
+        #grad1 {
+            width: 300px;
+            height: 300px;
+            background: blue;
+            background: linear-gradient(to right bottom, blue, white)
+        }
+        #grad2 {
+            width: 300px;
+            height: 300px;
+            background: blue;
+            background: linear-gradient(45deg, red, white)
+        }
+        #grad3 {
+            width: 300px;
+            height: 300px;
+            background: #0066FF;
+            background: linear-gradient(to bottom, #0066FF, white 30%, #0066FF);
+        }
+        #grad4 {
+            width: 300px;
+            height: 300px;
+            background: #0066FF;
+            background: radial-gradient(white, yellow, red)
+        }
+        #grad5 {
+            width: 300px;
+            height: 300px;
+            background: red;
+            background: radial-gradient(circle, white, yellow, red)
+        }
+        #grad6 {
+            width: 300px;
+            height: 300px;
+            background: blue;
+            background: radial-gradient(circle at 20% 20%, white, blue)
+        }
+        #grad7 {
+            width: 300px;
+            height: 300px;
+            background: orange;
+            background: radial-gradient(yellow, white 10%, orange 80%)
+        }
+        #grad8 {
+            width: 300px;
+            height: 300px;
+            background: red;
+            background: repeating-linear-gradient(yellow, red 30px );
+        }
+        #grad9 {
+            width: 300px;
+            height: 300px;
+            background: grey;
+            background: repeating-radial-gradient(white, grey 10%);
+        }
+        #grad10 {
+            width: 300px;
+            height: 300px;
+            background: grey;
+            background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+        }
+        #grad11 {
+            width: 300px;
+            height: 300px;
+            background: grey;
+            background: repeating-radial-gradient(white, white 10%, grey 10%, grey 20%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="grad1"></div>
+        <div id="grad2"></div>
+        <div id="grad3"></div>
+        <div id="grad4"></div>
+        <div id="grad5"></div>
+        <div id="grad6"></div>
+        <div id="grad7"></div>
+        <div id="grad8"></div>
+        <div id="grad9"></div>
+        <div id="grad10"></div>
+        <div id="grad11"></div>
+    </div>
+
+</body>
+</html>
