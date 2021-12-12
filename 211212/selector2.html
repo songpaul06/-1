@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>속성 선택자</title>
+    <style>
+        a[href] {
+            background: yellow;
+        }
+        a[target=_blank] {
+            font-weight: bolder;
+        }
+        [class ~= b] {
+            border: 2px solid black;
+        } /* class 속성 중 b를 갖는 것 */
+        li[title |= eng] {
+            color: red;
+        } /* li 태그 중 title 속성을 갖고, eng-로 시작 또는 eng */
+        li[title ^= eng] {
+            color: blue;
+        } /* li 태그 중 title 속성을 갖고, eng로 시작 */
+        a[href $= png] {
+            border: 1px solid black;
+            padding: 5px;
+        } /* a 태그 중 href 속성을 갖고, png로 끝남 */
+        a[href *= p] {
+            font-weight: bolder;
+        } /* a 태그 중 href 속성을 갖고, p를 가짐 */
+    </style>
+</head>
+<body>
+<section>
+    <ul>
+        <li><a>메인 메뉴</a></li>
+        <li><a href="#" target="_blank" class="a">메뉴 1</a></li>
+        <li><a href="#" target="_self" class="a">메뉴 2</a></li>
+        <li><a href="#" target="_blank" class="b">메뉴 3</a></li>
+        <li><a href="#" class="a b">메뉴 4</a></li>
+    </ul>
+    <ul>
+        언어 선택
+        <li title="english-us">영어(미국)</li>
+        <li title="english-uk">영어(영국)</li>
+        <li title="korean">한국어</li>
+        <li title="japanese">일본어</li>
+        <li title="eng">영어(캐나다)</li>
+    </ul>
+    <ul>
+        파일 선택
+        <li><a href="a.hwp">a 한글파일</a></li>
+        <li><a href="b.png">b 사진파일</a></li>
+        <li><a href="c.png">c 사진파일</a></li>
+        <li><a href="d.txt">d 텍스트 파일</a></li>
+    </ul>
+</section>
+</body>
+</html>
