@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가상 선택자 2</title>
+    <style>
+        .navi {
+            padding-bottom: 10px;
+            border-bottom: 2px solid grey;
+        }
+        .navi ul {
+            list-style: none;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        .navi ul li {
+            display: inline-block;
+            padding: 10px;
+        }
+        .navi a:link, .navi a:visited {
+            text-decoration: none;
+        }
+        .navi a:hover, .navi a:focus {
+            background-color: black;
+            color: white;
+        }
+        .navi a:active {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <nav class="navi">
+        <ul>
+            <li><a href="#intro">이용 안내</a></li>
+            <li><a href="#room">객실 소개</a></li>
+            <li><a href="#pay">이용 요금</a></li>
+            <li><a href="#">예약 하기</a></li>
+        </ul>
+    </nav>
+    <div id="intro" class="contents">
+        <h2>이용 안내</h2>
+        <p>입실 시간은 16시입니다. 퇴실 시간은 12시입니다.</p>
+    </div>
+    <div id="room" class="contents">
+        <h2>객실 소개</h2>
+        <p>스위트 룸에는 침대 2개가 있습니다.</p>
+    </div>
+    <div id="pay" class="contents">
+        <h2>이용 요금</h2>
+        <p>1인실 50,000원 / 2~3인실 100,000원</p>
+    </div>
+</div>
+</body>
+</html>

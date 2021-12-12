@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가상 선택자 4</title>
+    <style>
+        .contents :nth-child(3) {
+            background-color: yellow;
+        }
+        .contents p:nth-of-type(3) {
+            background-color: green;
+        }
+        .contents2 p:nth-of-type(odd) {
+            background-color: grey;
+        }
+        .contents2 p:nth-of-type(odd) {
+            background-color: grey;
+        }
+        table, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>이용 요금</h2>
+        <p>1인실 50,000원</p>
+        <p>2~3인실 100,000원</p>
+        <h2>객실 소개</h2>
+        <p>스위트 룸에는 침대가 2개 있습니다</p>
+    </div>
+    <div class="container2">
+        <h2>이용 요금</h2>
+        <p>1인실 50,000원</p>
+        <p>2~3인실 100,000원</p>
+        <h2>객실 소개</h2>
+        <p>스위트 룸에는 침대가 2개 있습니다</p>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <td>용도</td>
+            <td>개수</td>
+            <td>금액</td>
+        </tr>
+        <tr>
+            <td rowspan="2">가정용</td>
+            <td>10개</td>
+            <td>5,000원</td>
+        </tr>
+        <tr>
+            <td>25개</td>
+            <td>10,000개</td>
+        </tr>
+        <tr>
+            <td rowspan="2">선물용</td>
+            <td>10개</td>
+            <td>6,000원</td>
+        </tr>
+        <tr>
+            <td>25개</td>
+            <td>12,000원</td>
+        </tr>
+        </thead>
+    </table>
+</body>
+</html>
