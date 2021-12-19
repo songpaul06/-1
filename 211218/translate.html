@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이동 연습</title>
+    <style>
+        .origin {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            float: left;
+            margin: 30px;
+        }
+        .origin > div {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        #movex:hover {
+            transform: translateX(50px);
+        }
+        #movey:hover {
+            transform: translateY(20px);
+        }
+        #movexy:hover {
+            transform: translate(10px, 20px);
+        }
+        #scalex:hover {
+            transform: scaleX(2);
+        }
+        #scaley:hover {
+            transform: scaleY(1.5);
+        }
+        #scalexy:hover {
+            transform: scale(0.7, 1.5);
+        }
+        #rotate1:hover {
+            transform: rotate(40deg);
+        }
+        #rotate2:hover {
+            transform: rotate(-40deg);
+        }
+    </style>
+</head>
+<body>
+<div id="containter">
+    <div class="origin">
+        <div id="movex"></div>
+    </div>
+    <div class="origin">
+        <div id="movey"></div>
+    </div>
+    <div class="origin">
+        <div id="movexy"></div>
+    </div>
+    <div class="origin">
+        <div id="scalex"></div>
+    </div>
+    <div class="origin">
+        <div id="scaley"></div>
+    </div>
+    <div class="origin">
+        <div id="scalexy"></div>
+    </div>
+    <div class="origin">
+        <div id="rotate1"></div>
+    </div>
+    <div class="origin">
+        <div id="rotate2"></div>
+    </div>
+</div>
+</body>
+</html>

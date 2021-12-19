@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>원근감</title>
+    <style>
+        img {
+            width: 150px;
+            height: 180px;
+        }
+        .origin {
+            width: 150px;
+            height: 180px;
+            border: 1px solid black;
+            margin: 30px;
+            float: left;
+        }
+        .origin > div {
+            width: 150px;
+            height: 180px;
+        }
+        .rotatex:hover {
+            transform: rotateX(50deg);
+        }
+        #pers {
+            perspective: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="origin">
+    <img src="window.jpg">
+</div>
+<div class="origin">
+    <div class="rotatex">
+        <img src="window.jpg">
+    </div>
+</div>
+<div class="origin" id="pers">
+    <div class="rotatex">
+        <img src="window.jpg">
+    </div>
+</div>
+</body>
+</html>
