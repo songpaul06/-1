@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 50px;
+        }
+        #box1 {
+            background-color: lime;
+            border: 1px solid transparent;
+            animation-name: shape;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        #box2 {
+            background-color: violet;
+            border: 1px solid transparent;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        #box3 {
+            border: 1px solid black;
+            animation: bg 3s infinite alternate, rotate2 3s infinite;
+        }
+        @keyframes bg {
+            from { background-color: red; }
+            50% { background-color: green; }
+            to { background-color: blue; }
+        }
+        @keyframes rotate2 {
+            from { transform: rotateX(0deg) rotateY(0deg); }
+            50% { transform: rotateX(-180deg) rotateY(0deg); }
+            to { transform: rotateX(-180deg) rotateY(-180deg); }
+        }
+        @keyframes shape {
+            from {
+                border: 1px solid transparent;
+            }
+            to {
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+</div>
+</body>
+</html>
