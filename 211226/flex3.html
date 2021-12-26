@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width: 450px;
+            height: 150px;
+            border: 1px solid black;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .box {
+            padding: 5px 40px;
+            margin: 5px;
+            background-color: black;
+            color: white;
+        }
+        #box1 { align-self: flex-start; }
+        #box3 { align-self: stretch; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box" id="box1"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box" id="box3"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+</div>
+</body>
+</html>
