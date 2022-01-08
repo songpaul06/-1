@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>그리드 연습하기 2</title>
+    <style>
+        #wrapper {
+            width: 600px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: minmax(100px, auto);
+            margin-bottom: 20px;
+        }
+        #wrapper1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-bottom: 20px;
+        }
+        #wrapper2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            margin-bottom: 20px;
+        }
+        .item {
+            padding: 10px;
+            background-color: #EEEEEE;
+        }
+        .item:nth-child(odd) {
+            background-color: #CCCCCC;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div class="item">가는 말이 고와야 오는 말이 곱다: 말을 함부로 하는 경우에 쓰는 속담으로 상대방과 대화를 할 때 말을 좋게 해야 그에 대한 반응도 좋다는 말.</div>
+    <div class="item">개 밥에 도토리: 어딘가에 어울리지 못하는 존재</div>
+    <div class="item">고래 싸움에 새우 등 터진다: 윗사람들의 싸움에 아랫사람들이 억울하게 피해를 봄.</div>
+    <div class="item">남의 떡이 더 커보인다: 자신이 가진 것보다 남이 가진 것이 더 좋아 보인다는 뜻이다.</div>
+    <div class="item">돌다리도 두들겨 보고 건너라: 모든 일은 언제나 조심해야 한다는 뜻.</div>
+</div>
+<div id="wrapper1">
+    <div class="item">가는 말이 고와야 오는 말이 곱다: 말을 함부로 하는 경우에 쓰는 속담으로 상대방과 대화를 할 때 말을 좋게 해야 그에 대한 반응도 좋다는 말.</div>
+    <div class="item">개 밥에 도토리: 어딘가에 어울리지 못하는 존재</div>
+    <div class="item">고래 싸움에 새우 등 터진다: 윗사람들의 싸움에 아랫사람들이 억울하게 피해를 봄.</div>
+    <div class="item">남의 떡이 더 커보인다: 자신이 가진 것보다 남이 가진 것이 더 좋아 보인다는 뜻이다.</div>
+    <div class="item">돌다리도 두들겨 보고 건너라: 모든 일은 언제나 조심해야 한다는 뜻.</div>
+    <div class="item">바늘 도둑이 소 도둑 된다: 어떤 짓에 재미 들리기 시작하면 그 규모가 겉잡을 수 없이 커지게 됨.</div>
+</div>
+<div id="wrapper2">
+    <div class="item">가는 말이 고와야 오는 말이 곱다: 말을 함부로 하는 경우에 쓰는 속담으로 상대방과 대화를 할 때 말을 좋게 해야 그에 대한 반응도 좋다는 말.</div>
+    <div class="item">개 밥에 도토리: 어딘가에 어울리지 못하는 존재</div>
+    <div class="item">고래 싸움에 새우 등 터진다: 윗사람들의 싸움에 아랫사람들이 억울하게 피해를 봄.</div>
+    <div class="item">남의 떡이 더 커보인다: 자신이 가진 것보다 남이 가진 것이 더 좋아 보인다는 뜻이다.</div>
+    <div class="item">돌다리도 두들겨 보고 건너라: 모든 일은 언제나 조심해야 한다는 뜻.</div>
+    <div class="item">바늘 도둑이 소 도둑 된다: 어떤 짓에 재미 들리기 시작하면 그 규모가 겉잡을 수 없이 커지게 됨.</div>
+</div>
+</body>
+</html>
