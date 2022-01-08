@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>플렉스 연습하기 4</title>
+    <style>
+        .container {
+            width: 80%;
+            height: 150px;
+            display: flex;
+            border: 1px solid black;
+            margin: 20px;
+            align-items: center;
+        }
+        .box {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            background-color: black;
+            color: white;
+        }
+        #box1 { flex: 1; }
+        #box2 { flex: 30px; }
+        #box3 { flex: 2 2; }
+        #box4 { flex: 1 40px; }
+        #box5 { flex: 2 2 0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box" id="box1"><p>1</p></div>
+    <div class="box" id="box2"><p>2</p></div>
+    <div class="box" id="box3"><p>3</p></div>
+    <div class="box" id="box4"><p>4</p></div>
+    <div class="box" id="box5"><p>5</p></div>
+</div>
+</body>
+</html>
