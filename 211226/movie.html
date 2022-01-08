@@ -62,16 +62,44 @@
             background-color: #FFD400;
             color: white;
         }
-        #opt2 {
-            flex-direction: row;
+        .b4 {
+            padding: 5px 40px;
+            margin: 5px;
+            width: 20000px;
+            background-color: white;
+            color: black;
+            position: relative;
+            left:47.5%;
+        }
+        .container1 {
+            display: flex;
+            border: 1px solid white;
+            margin: 15px;
+        }
+        strong {
+            position: relative;
+            left:51%;
+        }
+        #pos1 {
+            position: absolute;
+            left: 90%;
+            top: 80%;
+        }
+        #pos2 {
+            position: absolute;
+            left: 92%;
+            top: 82%;
         }
     </style>
 </head>
 <body>
+<div class="container2">
+    <div class="b4"><p>1관 좌석배치도</p></div>
+</div>
 <div class="container1">
     <div class="box3"><p><strong>SCREEN</strong></p></div>
 </div>
-<div class="container" id="opt2">
+<div class="container">
     <div class="box2"><p><strong>A</strong></p></div>
     <div class="box"><p></p></div>
     <div class="box"><p>2</p></div>
@@ -87,7 +115,7 @@
     <div class="box"><p>11</p></div>
     <div class="box"><p>12</p></div>
 </div>
-<div class="container" id="opt2">
+<div class="container">
     <div class="box2"><p><strong>B</strong></p></div>
     <div class="box"><p>1</p></div>
     <div class="box"><p>2</p></div>
@@ -103,7 +131,7 @@
     <div class="box"><p>11</p></div>
     <div class="box"><p>12</p></div>
 </div>
-<div class="container" id="opt2">
+<div class="container">
     <div class="box2"><p><strong>C</strong></p></div>
     <div class="box"><p>1</p></div>
     <div class="box"><p>2</p></div>
@@ -119,7 +147,7 @@
     <div class="box"><p>11</p></div>
     <div class="box"><p>12</p></div>
 </div>
-<div class="container" id="opt2">
+<div class="container">
     <div class="box2"><p><strong>D</strong></p></div>
     <div class="box"><p>1</p></div>
     <div class="box"><p>2</p></div>
@@ -135,7 +163,7 @@
     <div class="box"><p>11</p></div>
     <div class="box"><p>12</p></div>
 </div>
-<div class="container" id="opt2">
+<div class="container">
     <div class="box2"><p><strong>E</strong></p></div>
     <div class="box"><p>1</p></div>
     <div class="box"><p>2</p></div>
@@ -151,7 +179,7 @@
     <div class="box"><p>11</p></div>
     <div class="box"><p>12</p></div>
 </div>
-<div class="container" id="opt2">
+<div class="container">
     <div class="box2"><p><strong>F</strong></p></div>
     <div class="box5"><p></p></div>
     <div class="boxs"><p>2</p></div>
@@ -159,5 +187,7 @@
     <div class="boxs"><p>4</p></div>
     <div class="boxs1"><p>5</p></div>
 </div>
+<p id="pos1"><b>< IN</b></p>
+<p id="pos2"><b>OUT ></b></p>
 </body>
 </html>
