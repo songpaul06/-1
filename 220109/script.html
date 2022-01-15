@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스크립트 연습하기</title>
+</head>
+<body>
+<h1 id="heading">자바스크립트</h1>
+<p id="text">위 글씨를 클릭해보세요</p>
+<p id="prompt">프롬프트 띄우기</p>
+<script>
+    var heading = document.querySelector('#heading');
+    heading.onclick = function() {
+        heading.style.color = "red";
+        heading.style.background = "yellow";
+        alert("클릭되었습니다");
+        confirm("배경 색상이 바뀝니다.");
+    }
+
+    var p = document.getElementById('prompt');
+    p.onclick = function() {
+        prompt("이름을 입력하세요");
+    }
+</script>
+</body>
+</html>
