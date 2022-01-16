@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>2단 레이아웃 만들기</title>
+    <title>블로그</title>
     <link rel="stylesheet" href="index.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Single+Day&display=swap');
@@ -10,38 +10,100 @@
             font-family: 'Nanum Brush Script', cursive;
 font-family: 'Single Day', cursive;
         }
+        div.gif {
+            position : relative;
+            height : 40px;
+            left : 10px;
+        }
+        div.xd {
+            position : relative;
+            height : 0px;
+            left : 200px;
+        }
+        div.home {
+            position : relative;
+            height : 0px;
+            left : 900px;
+        }
+        div.menu {
+            position : relative;
+            height : 0px;
+            left : 1000px;
+        }
+        div.menu1 {
+            position : relative;
+            height : 0px;
+            left : 1100px;
+        }
+        div.number {
+            position : relative;
+            height : 0px;
+            left : 1300px;
+        }
+        div.gif1 {
+            position : relative;
+            height : 30px;
+            left : 10px;
+        }
+        div.xd1 {
+            position : relative;
+            height : 0px;
+            left : 200px;
+        }
+        div.number1 {
+            position : relative;
+            height : 0px;
+            left : 700px;
+        }
+        div.wt {
+            position : relative;
+            height : 20px;
+            left : 100px;
+        }
+        div.wt1 {
+            position : relative;
+            height : 0px;
+            left : 450px;
+        }
+        div.wt2 {
+            position : relative;
+            height : 0px;
+            left : 850px;
+        }
     </style>
 </head>
 <body>
 <div id="container">
     <header id="header">
-        <div style="width: 30%; height:10px; float: left;">
-            <img src="몰루.gif"width="120">
-        </div>
-        <div style="width:65%; height:100px; float: right;">
-            <h1>몰?루 블로그</h1>
-        </div>
+        <div class="gif"><img src="몰루.gif"width="120"></div>
+        <div class="xd"><h1>몰?루 블로그</h1></div>
+        <div class="home"><h1>홈</h1></div>
+        <div class="menu"><h1>메뉴1</h1></div>
+        <div class="menu1"><h1>메뉴2</h1></div>
+        <div class="number"><h1>갤러리</h1></div>
     </header>
     <aside id="sidebar">
         <img src="노르웨이숲냥이.jpg"width="200">
         <h2>송필영</h2>
         <p><strong>010-8244-9033</strong></p>
         <p><strong>paulhappy167@gmail.com</strong></p>
+        <h1>...<h1>
+        <hr>
+        <p>안녕하세여. 저는 이제 고등학생이 돼는 사람입니다.<br>좋아하는 것은 게임,파스타,고양이등이 있습니다.<p>
     </aside>
     <section id="contents">
         <img src="크림파스타.jpg" width="400">
         <img src="고양이.jpg" width="400">
-        <img src="다리우스.jpg" width="400">
+        <img src="다리우스.jpg" width="430">
         <br>
-        <h2>글</h2>
+        <div class="wt"><a href="http://localhost:63342/-1/blog/article1.html?_ijt=caftr40sau04alt3fmtjqoo99c&_ij_reload=RELOAD_ON_SAVE">글1</a></div>
+        <div class="wt1"><h2>글2</h2></div>
+        <div class="wt2"><h2>글3</h2></div>
     </section>
     <footer id="footer">
-        <div style="width: 30%; height:10px; float: left;">
-            <img src="몰루.gif"width="100">
-        </div>
-        <div style="width:65%; height:100px; float: right;">
-            <h1>몰?루 블로그</h1>
-        </div>
+        <div class="gif1"><img src="몰루.gif"width="100"></div>
+        <div class="xd1"><h1>몰?루 블로그</h1></div>
+        <div class="number1"><h1>연락처</h1></div>
     </footer>
 </div>
 </body>

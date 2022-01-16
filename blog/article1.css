@@ -10,7 +10,7 @@
 }
 #header {
     width: 100%;
-    height: 120px;
+    height: 100px;
     background-color: #F0FFFF;
 }
 #sidebar {
@@ -24,10 +24,4 @@
     height: 400px;
     background-color: #E5EBF7;
     float: left;
-}
-#footer {
-    width: 100%;
-    height: 100px;
-    background-color: #F0FFFF;
-    clear: left;
 }
