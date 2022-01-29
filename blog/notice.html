@@ -10,6 +10,10 @@
             font-family: 'Nanum Brush Script', cursive;
 font-family: 'Single Day', cursive;
         }
+        table, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
         div.gif {
             position : relative;
             height : 40px;
@@ -40,48 +44,15 @@ font-family: 'Single Day', cursive;
             height : 0px;
             left : 1300px;
         }
-        div.gif1 {
+        #box { padding: 1px 70px 10px 0px;}
+        #box1 { padding: 1px 100px 10px 100px;}
+        #box2 { padding: 1px 100px 10px 50px;}
+        #box3 { padding: 1px 40px 10px 0px;}
+        div.tw {
             position : relative;
-            height : 30px;
-            left : 10px;
+            left : 952px;
+            top : 80px;
         }
-        div.xd1 {
-            position : relative;
-            height : 0px;
-            left : 200px;
-        }
-        div.number1 {
-            position : relative;
-            height : 0px;
-            left : 700px;
-        }
-        div.read {
-            position : relative;
-            height : 0px;
-            left : 1400px;
-        }
-        div.wt {
-            position : relative;
-            height : 20px;
-            left : 100px;
-        }
-        div.wt1 {
-            position : relative;
-            height : 0px;
-            left : 450px;
-        }
-        div.wt2 {
-            position : relative;
-            height : 0px;
-            left : 850px;
-        }
-        #sea1 {
-            position : absolute;
-            top : 641px;
-            bottom : 20px;
-            left : 0px;
-        }
-
     </style>
 </head>
 <body>
@@ -93,7 +64,9 @@ font-family: 'Single Day', cursive;
         <div class="menu"><h1><a href="http://localhost:63342/-1/blog/article1.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">메뉴1</a></h1></div>
         <div class="menu1"><h1><a href="http://localhost:63342/-1/blog/article2.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">메뉴2</a></h1></div>
         <div class="number"><h1><a href="http://localhost:63342/-1/blog/gallery.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">갤러리</a></h1></div>
-        <div class="read"><h1><a href="http://localhost:63342/-1/blog/notice.html?_ijt=ecnjr10bo5dqa15e5evq9cc5ji&_ij_reload=RELOAD_ON_SAVE">공지사항</a></h1></div>
+        <div class="tw">
+            <img src="설날.jpg" width="706">
+        </div>
     </header>
     <aside id="sidebar">
         <img src="노르웨이숲냥이.jpg"width="200">
@@ -105,20 +78,39 @@ font-family: 'Single Day', cursive;
         <p>안녕하세여. 저는 이제 고등학생이 돼는 사람입니다.<br>좋아하는 것은 게임,파스타,고양이등이 있습니다.<p>
     </aside>
     <section id="contents">
-        <img src="크림파스타.jpg" width="400">
-        <img src="고양이.jpg" width="400">
-        <img src="다리우스.jpg" width="430">
-        <br>
-        <div class="wt"><a href="http://localhost:63342/-1/blog/article1.html?_ijt=caftr40sau04alt3fmtjqoo99c&_ij_reload=RELOAD_ON_SAVE">글1</a></div>
-        <div class="wt1"><a href="http://localhost:63342/-1/blog/article2.html?_ijt=9usefchut84jo1d2p99ue12taa&_ij_reload=RELOAD_ON_SAVE">글2</a></div>
-        <div class="wt2"><h2></h2></div>
+        <table>
+            <tr>
+                <td><h1 id="box">게시판</h1></td>
+                <td><h2 id="box1">제목</h2></td>
+                <td><h2 id="box2">이름</h2></td>
+                <td><h2 id="box3">날짜</h2></td>
+            </tr>
+            <tr>
+                <td><h2>공지사항</h2></td>
+                <td><h2><a href="http://localhost:63342/-1/blog/page1.html?_ijt=uulmndifnroe2nrhdbpe6kaoga&_ij_reload=RELOAD_ON_SAVE">헤헿</h2></td>
+                <td><h2>최고관리자</h2></td>
+                <td><h2>2022-01-29</h2></td>
+            </tr>
+            <tr>
+                <td><h2>공지사항</h2></td>
+                <td><h2><a href="http://localhost:63342/-1/blog/page2.html?_ijt=uulmndifnroe2nrhdbpe6kaoga&_ij_reload=RELOAD_ON_SAVE">아니 이거 억까임(원신)</a></h2></td>
+                <td><h2>최고관리자</h2></td>
+                <td><h2>2022-01-29</h2></td>
+            </tr>
+            <tr>
+                <td><h2>공지사항</h2></td>
+                <td><h2><a href="http://localhost:63342/-1/blog/page3.html?_ijt=ll3sotm86sufj3fohu6i8tdlio&_ij_reload=RELOAD_ON_SAVE">발로란트 스킨 너무 비쌈..</a></h2></td>
+                <td><h2>최고관리자</h2></td>
+                <td><h2>2022-01-29</h2></td>
+            </tr>
+            <tr>
+                <td><h2>공지사항</h2></td>
+                <td><h2><a href="http://localhost:63342/-1/blog/page4.html?_ijt=5pu64r3f4lj8qg30fjg4gl9gh6&_ij_reload=RELOAD_ON_SAVE">쉬는날!</a></h2></td>
+                <td><h2>최고관리자</h2></td>
+                <td><h2>2022-01-29</h2></td>
+            </tr>
+        </table>
     </section>
-    <footer id="footer">
-        <div class="gif1"><img src="몰루.gif"width="100"></div>
-        <div class="xd1"><h1>몰?루 블로그</h1></div>
-        <div class="number1"><h1>연락처</h1></div>
-    </footer>
-    <img id="sea1" src="바다1.jpg" width="2000" height="400">
 </div>
 </body>
 </html>
