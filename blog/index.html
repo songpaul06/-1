@@ -10,70 +10,65 @@
             font-family: 'Nanum Brush Script', cursive;
 font-family: 'Single Day', cursive;
         }
-        div.gif {
+        li.gif {
             position : relative;
             height : 40px;
             left : 10px;
         }
-        div.xd {
+        li.xd {
             position : relative;
             height : 0px;
             left : 200px;
         }
-        div.home {
+        li.home {
             position : relative;
             height : 0px;
             left : 900px;
         }
-        div.menu {
+        li.menu {
             position : relative;
             height : 0px;
             left : 1000px;
         }
-        div.menu1 {
+        li.menu1 {
             position : relative;
             height : 0px;
             left : 1100px;
         }
-        div.number {
+        li.number {
             position : relative;
             height : 0px;
             left : 1300px;
         }
-        div.gif1 {
+        li.gif1 {
             position : relative;
             height : 30px;
             left : 10px;
         }
-        div.xd1 {
+        li.xd1 {
             position : relative;
             height : 0px;
             left : 200px;
         }
-        div.number1 {
+        li.number1 {
             position : relative;
             height : 0px;
             left : 700px;
         }
-        div.read {
+        li.read {
             position : relative;
             height : 0px;
             left : 1400px;
         }
-        div.wt {
+        li.wt {
             position : relative;
-            height : 20px;
-            left : 100px;
+            height : 0px;
+            left : 30px;
         }
-        div.wt1 {
+        li.wt1 {
             position : relative;
             height : 0px;
             left : 450px;
-        }
-        div.wt2 {
-            position : relative;
-            height : 0px;
-            left : 850px;
         }
         #sea1 {
             position : absolute;
@@ -81,19 +76,27 @@ font-family: 'Single Day', cursive;
             bottom : 20px;
             left : 0px;
         }
-
+        a {
+            text-decoration-line: none;
+            color: inherit;
+        }
+        a:hover {
+            text-decoration:underline; color:blue
+        }
     </style>
 </head>
 <body>
 <div id="container">
     <header id="header">
-        <div class="gif"><img src="몰루.gif"width="120"></div>
-        <div class="xd"><h1>몰?루 블로그</h1></div>
-        <div class="home"><h1>홈</h1></div>
-        <div class="menu"><h1><a href="http://localhost:63342/-1/blog/article1.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">메뉴1</a></h1></div>
-        <div class="menu1"><h1><a href="http://localhost:63342/-1/blog/article2.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">메뉴2</a></h1></div>
-        <div class="number"><h1><a href="http://localhost:63342/-1/blog/gallery.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">갤러리</a></h1></div>
-        <div class="read"><h1><a href="http://localhost:63342/-1/blog/notice.html?_ijt=ecnjr10bo5dqa15e5evq9cc5ji&_ij_reload=RELOAD_ON_SAVE">공지사항</a></h1></div>
+        <ul>
+            <li class="gif"><img src="몰루.gif"width="120"></li>
+            <li class="xd"><h1>몰?루 블로그</h1></li>
+            <li class="home"><h1><a href="http://localhost:63342/-1/blog/index.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">홈</a></h1></li>
+            <li class="menu"><h1><a href="http://localhost:63342/-1/blog/article1.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">메뉴1</a></h1></li>
+            <li class="menu1"><h1><a href="http://localhost:63342/-1/blog/article2.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">메뉴2</a></h1></li>
+            <li class="number"><h1><a href="http://localhost:63342/-1/blog/gallery.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">갤러리</a></h1></li>
+            <li class="read"><h1><a href="http://localhost:63342/-1/blog/notice.html?_ijt=ecnjr10bo5dqa15e5evq9cc5ji&_ij_reload=RELOAD_ON_SAVE">공지사항</a></h1></li>
+        </ul>
     </header>
     <aside id="sidebar">
         <img src="노르웨이숲냥이.jpg"width="200">
@@ -109,16 +112,19 @@ font-family: 'Single Day', cursive;
         <img src="고양이.jpg" width="400">
         <img src="다리우스.jpg" width="430">
         <br>
-        <div class="wt"><a href="http://localhost:63342/-1/blog/article1.html?_ijt=caftr40sau04alt3fmtjqoo99c&_ij_reload=RELOAD_ON_SAVE">글1</a></div>
-        <div class="wt1"><a href="http://localhost:63342/-1/blog/article2.html?_ijt=9usefchut84jo1d2p99ue12taa&_ij_reload=RELOAD_ON_SAVE">글2</a></div>
-        <div class="wt2"><h2></h2></div>
+        <ul>
+            <li class="wt"><a href="http://localhost:63342/-1/blog/article1.html?_ijt=caftr40sau04alt3fmtjqoo99c&_ij_reload=RELOAD_ON_SAVE">글1</a></li>
+            <li class="wt1"><a href="http://localhost:63342/-1/blog/article2.html?_ijt=9usefchut84jo1d2p99ue12taa&_ij_reload=RELOAD_ON_SAVE">글2</a></li>
+        </ul>
     </section>
     <footer id="footer">
-        <div class="gif1"><img src="몰루.gif"width="100"></div>
-        <div class="xd1"><h1>몰?루 블로그</h1></div>
-        <div class="number1"><h1>연락처</h1></div>
+        <ul>
+            <li class="gif1"><img src="몰루.gif"width="100"></li>
+            <li class="xd1"><h1>몰?루 블로그</h1></li>
+            <li class="number1"><h1>010-8244-9033</h1></li>
+        </ul>
     </footer>
-    <img id="sea1" src="바다1.jpg" width="2000" height="400">
+    <img id="sea1" src="바다1.jpg" width="2114" height="400">
 </div>
 </body>
 </html>

@@ -15,13 +15,13 @@
 }
 #sidebar {
     width: 15%;
-    height: 400px;
+    height: 410px;
     background-color: #DDDDFF;
     float: left;
 }
 #contents {
     width: 85%;
-    height: 400px;
+    height: 410px;
     background-color: #E5EBF7;
     float: left;
 }

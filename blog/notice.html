@@ -10,9 +10,24 @@
             font-family: 'Nanum Brush Script', cursive;
 font-family: 'Single Day', cursive;
         }
-        table, th, td {
-            border: 1px solid;
-            border-collapse: collapse;
+        table {
+            width: 100%;
+            border: 1px solid #444444;
+        }
+        th, td {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            text-align: center;
+        }
+        thead tr {
+            background-color: #0d47a1;
+            color: #ffffff;
+        }
+        tbody tr:nth-child(2n) {
+            background-color: #bbdefb;
+        }
+        tbody tr:nth-child(2n+1) {
+            background-color: #e3f2fd;
         }
         div.gif {
             position : relative;
@@ -48,25 +63,31 @@ font-family: 'Single Day', cursive;
         #box1 { padding: 1px 100px 10px 100px;}
         #box2 { padding: 1px 100px 10px 50px;}
         #box3 { padding: 1px 40px 10px 0px;}
-        div.tw {
+        div.read {
             position : relative;
-            left : 952px;
-            top : 80px;
+            height : 0px;
+            left : 1400px;
+        }
+        a {
+            text-decoration-line: none;
+            color: inherit;
+        }
+        a:hover {
+            text-decoration:underline; color:blue
         }
     </style>
 </head>
 <body>
+
 <div id="container">
     <header id="header">
         <div class="gif"><img src="몰루.gif"width="120"></div>
         <div class="xd"><h1>몰?루 블로그</h1></div>
-        <div class="home"><h1>홈</h1></div>
+        <div class="home"><h1><a href="http://localhost:63342/-1/blog/index.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">홈</a></h1></div>
         <div class="menu"><h1><a href="http://localhost:63342/-1/blog/article1.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">메뉴1</a></h1></div>
         <div class="menu1"><h1><a href="http://localhost:63342/-1/blog/article2.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">메뉴2</a></h1></div>
         <div class="number"><h1><a href="http://localhost:63342/-1/blog/gallery.html?_ijt=ifm9vlc7j1r6hsrq5u58b3n4t0&_ij_reload=RELOAD_ON_SAVE">갤러리</a></h1></div>
-        <div class="tw">
-            <img src="설날.jpg" width="706">
-        </div>
+        <div class="read"><h1><a href="http://localhost:63342/-1/blog/notice.html?_ijt=ecnjr10bo5dqa15e5evq9cc5ji&_ij_reload=RELOAD_ON_SAVE">공지사항</a></h1></div>
     </header>
     <aside id="sidebar">
         <img src="노르웨이숲냥이.jpg"width="200">
@@ -79,12 +100,14 @@ font-family: 'Single Day', cursive;
     </aside>
     <section id="contents">
         <table>
+            <thead>
             <tr>
                 <td><h1 id="box">게시판</h1></td>
                 <td><h2 id="box1">제목</h2></td>
                 <td><h2 id="box2">이름</h2></td>
                 <td><h2 id="box3">날짜</h2></td>
             </tr>
+            </thead>
             <tr>
                 <td><h2>공지사항</h2></td>
                 <td><h2><a href="http://localhost:63342/-1/blog/page1.html?_ijt=uulmndifnroe2nrhdbpe6kaoga&_ij_reload=RELOAD_ON_SAVE">헤헿</h2></td>
